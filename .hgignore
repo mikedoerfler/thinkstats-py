@@ -1,4 +1,5 @@
 syntax: glob
+
 #-- specific data file that should be downloaded through the books website
 data/
 
@@ -14,5 +15,6 @@ data/
 
 # PyCharm files
 .idea/
+*.pyc
 
 
