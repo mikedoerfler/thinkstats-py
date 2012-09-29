@@ -1,0 +1,18 @@
+syntax: glob
+#-- specific data file that should be downloaded through the books website
+data/
+
+#-- OS Junk files
+[Tt]humbs.db
+
+#-- Mercurial junk files
+*.orig
+
+#-- VIM junk files
+*.swp
+*~
+
+# PyCharm files
+.idea/
+
+
