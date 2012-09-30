@@ -4,6 +4,7 @@ by Allen B. Downey, available from greenteapress.com
 Copyright 2010 Allen B. Downey
 License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html
 """
+import os
 
 import survey
 
@@ -83,6 +84,9 @@ def Summarize(data_dir):
     Returns:
         tuple of Tables
     """
+    if (data_dir == ".") :
+        data_dir = os.path.join("..", "data")
+
     table, firsts, others = MakeTables(data_dir)
     ProcessTables(firsts, others)
         
